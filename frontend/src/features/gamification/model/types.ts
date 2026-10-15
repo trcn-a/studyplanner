@@ -1,0 +1,2 @@
+export interface Achievement { id: string; title: string; description: string; progress: number; target: number; unlocked: boolean }
+export interface Gamification { points: number; level: number; levelProgress: number; nextLevelPoints: number; completedTasks: number; currentStreak: number; longestStreak: number; activeToday: boolean; week: { date: string; active: boolean }[]; achievements: Achievement[] }

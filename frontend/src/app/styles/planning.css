@@ -1,0 +1,46 @@
+.planning-tools { padding:16px 0; border-bottom:1px solid #dfd2c5; margin-bottom:16px; }
+.planning-actions {display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.planning-create { margin-left:auto; }
+.planning-status,.planning-hint {color:#796353;font-size:13px;}
+.availability-editor {background:#faf5ef;border:1px solid #dfd2c5;border-radius:12px;padding:14px;margin:12px 0;}
+.availability-editor h3{margin:0 0 14px;}
+.availability-row{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
+.availability-row input{width:125px;}.availability-row select{width:175px;}
+.planning-options{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;}
+.planning-options label{display:grid;gap:6px;font-size:13px;}.planning-options input{width:190px;}
+.planning-checkbox{display:flex;align-items:center;gap:8px;}.planning-checkbox input{width:auto;}
+.planning-issues,.calendar-exchange{margin-top:14px;font-size:14px;}.planning-issues summary,.calendar-exchange summary{cursor:pointer;font-weight:600;}
+.planning-issues p{color:#825331;margin:9px 0;}
+.calendar-exchange input[type=file]{max-width:240px;font-size:12px;}
+.external-event-row{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #e7dcd1;}
+.schedule-available{position:absolute;left:0;right:0;background:rgba(119,151,98,.13);pointer-events:none;z-index:0;}
+.schedule-event.auto-session{background:#eee0cd;border-style:solid;}
+.schedule-event.external-session{background:#e4e2df;border-left:3px solid #858079;color:#4f4b46;}
+.schedule-slot{position:relative;}.schedule-event{z-index:2;}
+@media(max-width:600px){.availability-editor{padding:12px;}.availability-row select{width:100%;}.planning-actions>.primary{width:100%;}.planning-status{display:block;}.external-event-row{align-items:flex-start;}}
+
+.app-shell > main { min-width:0; }
+.planning-tools { padding:12px 20px; }
+.schedule-event { display:block; }
+.schedule-event strong { overflow-wrap:anywhere; }
+@media(max-width:720px){.planning-tools{padding:12px 16px;}}
+
+.schedule-event.short-session{padding:1px 3px;line-height:12px;font-size:10px;}
+.schedule-event.short-session small{display:none;}
+.schedule-event.short-session strong{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+
+.schedule-event.manual-session { background:#dfedf2; border-style:solid; }
+.schedule-legend { flex-wrap:wrap; gap:12px; }
+.schedule-legend .auto-key::before, .schedule-legend .manual-key::before { content:''; display:inline-block; width:10px; height:10px; margin-right:5px; border-radius:2px; border:1px solid #c6b49b; background:#eee0cd; }
+.schedule-legend .manual-key::before { background:#dfedf2; border-color:#a7c3ce; }
+.task-session-list { border-top:1px solid #e5d9cc; margin-top:18px; padding-top:12px; }
+.task-session-list h3 { font-size:15px; margin:0 0 12px; }
+.task-session-list ul { padding:0; margin:0; list-style:none; display:grid; gap:8px; max-height:260px; overflow:auto; }
+.task-session-list li { display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px; padding:10px; background:#f5f0e9; border-radius:8px; font-size:12px; }
+.task-session-list li strong { font-weight:600; }
+.task-session-list li span { color:#796353; }
+.task-session-list .session-auto { background:#eee0cd; }
+.task-session-list .session-manual { background:#dfedf2; }
+
+.schedule-event.movable-session { cursor:grab; }
+.schedule-event.movable-session:active { cursor:grabbing; }

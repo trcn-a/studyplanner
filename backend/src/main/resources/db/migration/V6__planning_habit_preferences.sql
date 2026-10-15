@@ -1,0 +1,1 @@
+ALTER TABLE planning_settings ADD COLUMN habit_aware BOOLEAN NOT NULL DEFAULT TRUE;

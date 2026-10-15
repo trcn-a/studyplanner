@@ -1,0 +1,14 @@
+**/target/
+**/node_modules/
+**/dist/
+**/data/
+.idea/
+.vscode/
+*.log
+.env
+**/config/database.cmd
+**/config/google-calendar.properties
+**/client_secret*.json
+
+.run/
+*.tsbuildinfo

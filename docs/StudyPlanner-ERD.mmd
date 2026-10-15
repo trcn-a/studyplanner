@@ -1,0 +1,134 @@
+erDiagram
+    direction LR
+    app_users ||--o{ subjects : owns
+    subjects ||--o{ tasks : contains
+    tasks |o--o{ tasks : parent
+    tasks ||--o{ study_sessions : has
+    app_users ||--o| planning_settings : configures
+    app_users ||--o{ study_availability : defines
+    tasks ||--o| planning_issues : has
+    app_users ||--o{ calendar_events : imports
+    app_users ||--o| google_calendar_connection : connects
+    app_users ||--o{ completion_rewards : earns
+    app_users ||--o{ notifications : receives
+
+    app_users {
+        uuid id PK
+        varchar email UK
+        varchar display_name
+        varchar password_hash
+        boolean enabled
+        timestamptz created_at
+    }
+    subjects {
+        uuid id PK
+        uuid user_id FK
+        varchar name
+        varchar description
+        varchar color
+        timestamptz created_at
+        timestamptz updated_at
+    }
+    tasks {
+        uuid id PK
+        uuid subject_id FK
+        uuid parent_task_id FK "Nullable"
+        varchar title
+        varchar description
+        varchar status
+        varchar priority
+        date due_date "Nullable"
+        integer estimated_minutes "Nullable"
+        varchar planning_time_source "USER_ESTIMATE / PREDICTION"
+        boolean prediction_snapshot
+        integer initial_estimated_minutes "Nullable"
+        varchar initial_priority "Nullable"
+        varchar task_type "Nullable"
+        varchar difficulty "Nullable"
+        varchar initial_task_type "Nullable"
+        varchar initial_difficulty "Nullable"
+        timestamptz created_at
+        timestamptz updated_at
+    }
+    study_sessions {
+        uuid id PK
+        uuid task_id FK
+        timestamptz starts_at
+        timestamptz ends_at "Nullable"
+        integer planned_minutes "Nullable"
+        integer minutes "Nullable"
+        varchar status
+        varchar source
+        timestamptz created_at
+    }
+    planning_settings {
+        uuid user_id PK,FK
+        varchar zone_id
+        boolean auto_replan
+        integer horizon_days
+        integer session_minutes
+        integer break_minutes "0..120"
+        boolean habit_aware
+        integer study_days
+        varchar fingerprint "Nullable"
+    }
+    study_availability {
+        uuid id PK
+        uuid user_id FK
+        integer day_of_week
+        time start_time
+        time end_time
+    }
+    planning_issues {
+        uuid task_id PK,FK
+        varchar title
+        varchar reason
+        integer remaining_minutes
+    }
+    calendar_events {
+        uuid id PK
+        uuid user_id FK
+        varchar source "ICALENDAR or GOOGLE"
+        varchar external_uid "Unique with user_id and source"
+        varchar title
+        timestamptz starts_at
+        timestamptz ends_at
+    }
+    google_calendar_connection {
+        uuid user_id PK,FK
+        text refresh_token "Encrypted"
+        uuid revision
+        timestamptz last_sync "Nullable"
+        varchar error "Nullable"
+    }
+    completion_rewards {
+        uuid id PK
+        uuid task_id UK "No foreign key to tasks"
+        uuid user_id FK
+        integer points
+        timestamptz completed_at "Nullable"
+    }
+    notifications {
+        uuid id PK
+        uuid user_id FK
+        varchar event_key "Unique with user_id"
+        varchar kind
+        varchar title
+        varchar body
+        timestamptz created_at
+        timestamptz read_at "Nullable"
+    }
+
+    app_users ||--o{ user_achievements : earns
+    user_achievements {
+        uuid user_id PK,FK
+        varchar achievement_code PK
+        timestamptz earned_at "Nullable for historical awards"
+    }
+
+    app_users ||--o| notification_settings : configures
+    notification_settings {
+        uuid user_id PK,FK
+        boolean reminders_enabled
+        integer reminder_minutes
+    }

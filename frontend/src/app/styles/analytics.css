@@ -1,0 +1,31 @@
+.analytics{margin-bottom:24px;color:#493629}
+.analytics-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.analytics-heading h2{margin:0 0 6px;font-size:20px;letter-spacing:-.4px}.analytics-heading p{margin:0;font-size:12px;color:#796352}
+.analytics-period{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap}.analytics-period label{display:flex;align-items:center;gap:8px;font-size:11px;color:#796352}
+.analytics-period input{border:1px solid #e5d9cc;border-radius:7px;padding:8px 10px;background:#fffdf9;color:#493629;font-size:12px}
+.segmented{display:flex;background:#eee6dc;border-radius:9px;padding:3px}.segmented button{border:0;background:transparent;color:#796352;padding:8px 13px;border-radius:7px;font-size:12px;font-weight:600}.segmented button.active{background:#fffdf9;color:#493629;box-shadow:0 1px 3px #81583d26}
+.analytics-body.stale{opacity:.6;transition:opacity .15s}
+.analytics-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:16px}
+.analytics-card{display:flex;gap:14px;align-items:center;background:#fffdf9;border:1px solid #e5d9cc;border-radius:12px;padding:16px}
+.analytics-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:11px;background:#efe1d1;color:#81583d;flex-shrink:0}
+.analytics-card>div{display:grid;gap:3px;min-width:0}.analytics-card span{font-size:12px;color:#796352}.analytics-card strong{font-size:24px;line-height:1.1;font-weight:800}.analytics-card small{font-size:11px;color:#87705d;line-height:1.4}
+.analytics-panel{background:#fffdf9;border:1px solid #e5d9cc;border-radius:12px;padding:18px 20px;min-width:0}.analytics-panel h3{margin:0 0 14px;font-size:14px}.analytics-panel.wide{margin-bottom:16px}
+.analytics-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:16px}
+.chart{width:100%;height:auto;display:block}.chart-grid{stroke:#ece1d4;stroke-width:1}.chart-axis{font-size:11px;fill:#87705d}
+.bar-plan{fill:#e6d3bd}.bar-actual{fill:#81583d}
+.legend{display:flex;gap:16px;flex-wrap:wrap;list-style:none;margin:12px 0 0;padding:0;font-size:12px;color:#6a5444}.legend li{display:flex;align-items:center;gap:7px}.legend b{margin-left:4px;color:#493629}
+.legend i{width:11px;height:11px;border-radius:3px;display:inline-block}.legend i.bar-plan{background:#e6d3bd}.legend i.bar-actual{background:#81583d}
+.stacked{display:flex;height:22px;border-radius:7px;overflow:hidden;background:#f0ebe4}.stacked span{display:block;height:100%}
+.seg-done{background:#758254}.seg-missed{background:#ae5441}.seg-late{background:#d9a441}.seg-future{background:#cdb89f}
+.legend i.seg-done{background:#758254}.legend i.seg-missed{background:#ae5441}.legend i.seg-late{background:#d9a441}.legend i.seg-future{background:#cdb89f}
+.analytics-note{font-size:12px;color:#796352;margin:12px 0 0;line-height:1.5}.analytics-empty{font-size:12px;color:#87705d;margin:8px 0 0}
+.subject-bars,.task-progress{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.subject-bars>li{display:grid;gap:5px}.subject-bars>li>div:first-child{display:flex;justify-content:space-between;gap:10px;font-size:13px}.subject-bars i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px}.subject-bars small,.task-progress small{font-size:11px;color:#87705d}
+.track{height:9px;background:#f0ebe4;border-radius:6px;overflow:hidden}.track>span{display:block;height:100%;border-radius:6px;background:#81583d}.track>span.over{background:#ae5441}
+.task-progress>li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:center}.task-progress>li>div:first-child{display:grid;gap:3px;min-width:0}.task-progress strong{font-size:13px;overflow-wrap:anywhere}.task-progress span{font-size:11px;color:#87705d}
+@media(max-width:1000px){.analytics-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.analytics-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.analytics-cards{grid-template-columns:1fr}.task-progress>li{grid-template-columns:1fr;gap:6px}.analytics-period{width:100%}}
+
+.analytics-plan .legend { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; font-size:11px; }
+.analytics-plan .legend li { display:grid; grid-template-columns:11px minmax(0,1fr); gap:4px 5px; align-items:center; }
+.analytics-plan .legend b { grid-column:2; margin:0; font-size:11px; }

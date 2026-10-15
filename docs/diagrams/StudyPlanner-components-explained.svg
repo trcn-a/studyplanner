@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1180" viewBox="0 0 1440 1180">
+<defs><marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto"><path d="M1,1 L10,5 L1,9" fill="none" stroke="#334155" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:'Segoe UI',Arial,sans-serif;fill:#172033}.title{font-size:28px;font-weight:600}.label{font-size:20px;font-weight:600}.small{font-size:17px}.note{font-size:16px;fill:#475569}</style>
+<rect width="1440" height="1180" fill="white"/>
+<rect x="340" y="30" width="630" height="155" fill="#fafbfd" stroke="#64748b" stroke-width="1.7"/>
+<text x="360" y="60" class="label" text-anchor="start">Клієнтська частина</text>
+<rect x="365" y="80" width="250" height="85" fill="#edf4fc" stroke="#475569" stroke-width="1.6"/>
+<rect x="587" y="86" width="16" height="23" fill="white" stroke="#475569"/><rect x="582" y="90" width="9" height="5" fill="white" stroke="#475569"/><rect x="582" y="100" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="490.0" y="126" class="label" text-anchor="middle">Інтерфейс</text>
+<text x="490.0" y="152" class="small" text-anchor="middle">Сторінки й компоненти</text>
+<rect x="685" y="80" width="250" height="85" fill="#edf4fc" stroke="#475569" stroke-width="1.6"/>
+<rect x="907" y="86" width="16" height="23" fill="white" stroke="#475569"/><rect x="902" y="90" width="9" height="5" fill="white" stroke="#475569"/><rect x="902" y="100" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="810.0" y="126" class="label" text-anchor="middle">HTTP-клієнт</text>
+<text x="810.0" y="152" class="small" text-anchor="middle">Запити до REST API</text>
+<polyline points="615,122 685,122" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="50" y="255" width="1140" height="710" fill="#fafbfd" stroke="#64748b" stroke-width="1.7"/>
+<text x="70" y="285" class="label" text-anchor="start">Серверна частина</text>
+<rect x="90" y="310" width="270" height="85" fill="#f2f5f9" stroke="#475569" stroke-width="1.6"/>
+<rect x="332" y="316" width="16" height="23" fill="white" stroke="#475569"/><rect x="327" y="320" width="9" height="5" fill="white" stroke="#475569"/><rect x="327" y="330" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="225.0" y="356" class="label" text-anchor="middle">Spring Security</text>
+<text x="225.0" y="382" class="small" text-anchor="middle">Сеанс, CSRF, доступ</text>
+<rect x="445" y="310" width="330" height="85" fill="#edf4fc" stroke="#475569" stroke-width="1.6"/>
+<rect x="747" y="316" width="16" height="23" fill="white" stroke="#475569"/><rect x="742" y="320" width="9" height="5" fill="white" stroke="#475569"/><rect x="742" y="330" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="610.0" y="356" class="label" text-anchor="middle">REST-контролери</text>
+<text x="610.0" y="382" class="small" text-anchor="middle">Приймання запитів і DTO</text>
+<polyline points="810,165 810,220 610,220 610,310" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<polyline points="445,352 360,352" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="90" y="450" width="1060" height="320" fill="#fafbfd" stroke="#64748b" stroke-width="1.7"/>
+<text x="110" y="480" class="label" text-anchor="start">Функціональні модулі</text>
+<rect x="110" y="505" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="272" y="511" width="16" height="23" fill="white" stroke="#475569"/><rect x="267" y="515" width="9" height="5" fill="white" stroke="#475569"/><rect x="267" y="525" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="205.0" y="551" class="label" text-anchor="middle">account</text>
+<text x="205.0" y="577" class="small" text-anchor="middle">Облікові записи</text>
+<text x="205.0" y="599" class="small" text-anchor="middle">та профіль</text>
+<rect x="317" y="505" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="479" y="511" width="16" height="23" fill="white" stroke="#475569"/><rect x="474" y="515" width="9" height="5" fill="white" stroke="#475569"/><rect x="474" y="525" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="412.0" y="551" class="label" text-anchor="middle">subject</text>
+<text x="412.0" y="577" class="small" text-anchor="middle">Навчальні</text>
+<text x="412.0" y="599" class="small" text-anchor="middle">дисципліни</text>
+<rect x="524" y="505" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="686" y="511" width="16" height="23" fill="white" stroke="#475569"/><rect x="681" y="515" width="9" height="5" fill="white" stroke="#475569"/><rect x="681" y="525" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="619.0" y="551" class="label" text-anchor="middle">task</text>
+<text x="619.0" y="577" class="small" text-anchor="middle">Завдання</text>
+<text x="619.0" y="599" class="small" text-anchor="middle">та підзавдання</text>
+<rect x="731" y="505" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="893" y="511" width="16" height="23" fill="white" stroke="#475569"/><rect x="888" y="515" width="9" height="5" fill="white" stroke="#475569"/><rect x="888" y="525" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="826.0" y="551" class="label" text-anchor="middle">session</text>
+<text x="826.0" y="577" class="small" text-anchor="middle">Навчальні сесії</text>
+<text x="826.0" y="599" class="small" text-anchor="middle">та облік часу</text>
+<rect x="938" y="505" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="1100" y="511" width="16" height="23" fill="white" stroke="#475569"/><rect x="1095" y="515" width="9" height="5" fill="white" stroke="#475569"/><rect x="1095" y="525" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="1033.0" y="551" class="label" text-anchor="middle">analytics</text>
+<text x="1033.0" y="577" class="small" text-anchor="middle">Показники</text>
+<text x="1033.0" y="599" class="small" text-anchor="middle">навчальної роботи</text>
+<rect x="110" y="645" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="272" y="651" width="16" height="23" fill="white" stroke="#475569"/><rect x="267" y="655" width="9" height="5" fill="white" stroke="#475569"/><rect x="267" y="665" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="205.0" y="691" class="label" text-anchor="middle">gamification</text>
+<text x="205.0" y="717" class="small" text-anchor="middle">Бали, рівні</text>
+<text x="205.0" y="739" class="small" text-anchor="middle">та досягнення</text>
+<rect x="317" y="645" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="479" y="651" width="16" height="23" fill="white" stroke="#475569"/><rect x="474" y="655" width="9" height="5" fill="white" stroke="#475569"/><rect x="474" y="665" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="412.0" y="691" class="label" text-anchor="middle">notification</text>
+<text x="412.0" y="717" class="small" text-anchor="middle">Сповіщення</text>
+<text x="412.0" y="739" class="small" text-anchor="middle">та нагадування</text>
+<rect x="524" y="645" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="686" y="651" width="16" height="23" fill="white" stroke="#475569"/><rect x="681" y="655" width="9" height="5" fill="white" stroke="#475569"/><rect x="681" y="665" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="619.0" y="691" class="label" text-anchor="middle">prediction</text>
+<text x="619.0" y="717" class="small" text-anchor="middle">Прогнозування</text>
+<text x="619.0" y="739" class="small" text-anchor="middle">тривалості</text>
+<rect x="731" y="645" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="893" y="651" width="16" height="23" fill="white" stroke="#475569"/><rect x="888" y="655" width="9" height="5" fill="white" stroke="#475569"/><rect x="888" y="665" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="826.0" y="691" class="label" text-anchor="middle">planning</text>
+<text x="826.0" y="717" class="small" text-anchor="middle">Формування</text>
+<text x="826.0" y="739" class="small" text-anchor="middle">розкладу</text>
+<rect x="938" y="645" width="190" height="108" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="1100" y="651" width="16" height="23" fill="white" stroke="#475569"/><rect x="1095" y="655" width="9" height="5" fill="white" stroke="#475569"/><rect x="1095" y="665" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="1033.0" y="691" class="label" text-anchor="middle">googlecalendar</text>
+<text x="1033.0" y="717" class="small" text-anchor="middle">Підключення</text>
+<text x="1033.0" y="739" class="small" text-anchor="middle">та синхронізація</text>
+<polyline points="610,395 610,450" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="1230" y="645" width="195" height="108" fill="#fff8eb" stroke="#475569" stroke-width="1.6"/>
+<rect x="1397" y="651" width="16" height="23" fill="white" stroke="#475569"/><rect x="1392" y="655" width="9" height="5" fill="white" stroke="#475569"/><rect x="1392" y="665" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="1327.5" y="691" class="label" text-anchor="middle">Google Calendar</text>
+<text x="1327.5" y="717" class="small" text-anchor="middle">OAuth 2.0</text>
+<text x="1327.5" y="739" class="small" text-anchor="middle">Calendar API</text>
+<polyline points="1128,699 1230,699" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<path d="M455,1020 C455,993 785,993 785,1020 L785,1103 C785,1130 455,1130 455,1103 Z" fill="#f6f2fa" stroke="#475569" stroke-width="1.7"/>
+<ellipse cx="620" cy="1020" rx="165" ry="20" fill="#f6f2fa" stroke="#475569" stroke-width="1.7"/>
+<text x="620" y="1066" class="label" text-anchor="middle">PostgreSQL</text>
+<text x="620" y="1093" class="small" text-anchor="middle">Дані системи</text>
+<polyline points="620,770 620,999" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+</svg>

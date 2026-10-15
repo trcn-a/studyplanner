@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980">
+<defs><marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto"><path d="M1,1 L10,5 L1,9" fill="none" stroke="#334155" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:'Segoe UI',Arial,sans-serif;fill:#172033}.title{font-size:28px;font-weight:600}.label{font-size:20px;font-weight:600}.small{font-size:17px}.note{font-size:16px;fill:#475569}</style>
+<rect width="1440" height="980" fill="white"/>
+<rect x="340" y="30" width="630" height="130" fill="#fafbfd" stroke="#64748b" stroke-width="1.7"/>
+<text x="360" y="60" class="label" text-anchor="start">Клієнтська частина</text>
+<rect x="365" y="80" width="250" height="60" fill="#edf4fc" stroke="#475569" stroke-width="1.6"/>
+<rect x="587" y="86" width="16" height="23" fill="white" stroke="#475569"/><rect x="582" y="90" width="9" height="5" fill="white" stroke="#475569"/><rect x="582" y="100" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="490.0" y="122.0" class="label" text-anchor="middle">Інтерфейс</text>
+<rect x="685" y="80" width="250" height="60" fill="#edf4fc" stroke="#475569" stroke-width="1.6"/>
+<rect x="907" y="86" width="16" height="23" fill="white" stroke="#475569"/><rect x="902" y="90" width="9" height="5" fill="white" stroke="#475569"/><rect x="902" y="100" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="810.0" y="122.0" class="label" text-anchor="middle">HTTP-клієнт</text>
+<polyline points="615,110 685,110" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="50" y="230" width="1140" height="585" fill="#fafbfd" stroke="#64748b" stroke-width="1.7"/>
+<text x="70" y="260" class="label" text-anchor="start">Серверна частина</text>
+<rect x="90" y="285" width="270" height="70" fill="#f2f5f9" stroke="#475569" stroke-width="1.6"/>
+<rect x="332" y="291" width="16" height="23" fill="white" stroke="#475569"/><rect x="327" y="295" width="9" height="5" fill="white" stroke="#475569"/><rect x="327" y="305" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="225.0" y="332.0" class="label" text-anchor="middle">Spring Security</text>
+<rect x="445" y="285" width="330" height="70" fill="#edf4fc" stroke="#475569" stroke-width="1.6"/>
+<rect x="747" y="291" width="16" height="23" fill="white" stroke="#475569"/><rect x="742" y="295" width="9" height="5" fill="white" stroke="#475569"/><rect x="742" y="305" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="610.0" y="332.0" class="label" text-anchor="middle">REST-контролери</text>
+<polyline points="810,140 810,195 610,195 610,285" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<polyline points="445,320 360,320" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="90" y="410" width="1060" height="250" fill="#fafbfd" stroke="#64748b" stroke-width="1.7"/>
+<text x="110" y="440" class="label" text-anchor="start">Функціональні модулі</text>
+<rect x="110" y="460" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="272" y="466" width="16" height="23" fill="white" stroke="#475569"/><rect x="267" y="470" width="9" height="5" fill="white" stroke="#475569"/><rect x="267" y="480" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="205.0" y="507.0" class="label" text-anchor="middle">account</text>
+<rect x="317" y="460" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="479" y="466" width="16" height="23" fill="white" stroke="#475569"/><rect x="474" y="470" width="9" height="5" fill="white" stroke="#475569"/><rect x="474" y="480" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="412.0" y="507.0" class="label" text-anchor="middle">subject</text>
+<rect x="524" y="460" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="686" y="466" width="16" height="23" fill="white" stroke="#475569"/><rect x="681" y="470" width="9" height="5" fill="white" stroke="#475569"/><rect x="681" y="480" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="619.0" y="507.0" class="label" text-anchor="middle">task</text>
+<rect x="731" y="460" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="893" y="466" width="16" height="23" fill="white" stroke="#475569"/><rect x="888" y="470" width="9" height="5" fill="white" stroke="#475569"/><rect x="888" y="480" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="826.0" y="507.0" class="label" text-anchor="middle">session</text>
+<rect x="938" y="460" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="1100" y="466" width="16" height="23" fill="white" stroke="#475569"/><rect x="1095" y="470" width="9" height="5" fill="white" stroke="#475569"/><rect x="1095" y="480" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="1033.0" y="507.0" class="label" text-anchor="middle">analytics</text>
+<rect x="110" y="570" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="272" y="576" width="16" height="23" fill="white" stroke="#475569"/><rect x="267" y="580" width="9" height="5" fill="white" stroke="#475569"/><rect x="267" y="590" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="205.0" y="617.0" class="label" text-anchor="middle">gamification</text>
+<rect x="317" y="570" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="479" y="576" width="16" height="23" fill="white" stroke="#475569"/><rect x="474" y="580" width="9" height="5" fill="white" stroke="#475569"/><rect x="474" y="590" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="412.0" y="617.0" class="label" text-anchor="middle">notification</text>
+<rect x="524" y="570" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="686" y="576" width="16" height="23" fill="white" stroke="#475569"/><rect x="681" y="580" width="9" height="5" fill="white" stroke="#475569"/><rect x="681" y="590" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="619.0" y="617.0" class="label" text-anchor="middle">prediction</text>
+<rect x="731" y="570" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="893" y="576" width="16" height="23" fill="white" stroke="#475569"/><rect x="888" y="580" width="9" height="5" fill="white" stroke="#475569"/><rect x="888" y="590" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="826.0" y="617.0" class="label" text-anchor="middle">planning</text>
+<rect x="938" y="570" width="190" height="70" fill="#f3f8f3" stroke="#475569" stroke-width="1.6"/>
+<rect x="1100" y="576" width="16" height="23" fill="white" stroke="#475569"/><rect x="1095" y="580" width="9" height="5" fill="white" stroke="#475569"/><rect x="1095" y="590" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="1033.0" y="617.0" class="label" text-anchor="middle">googlecalendar</text>
+<polyline points="610,355 610,410" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="1230" y="570" width="195" height="70" fill="#fff8eb" stroke="#475569" stroke-width="1.6"/>
+<rect x="1397" y="576" width="16" height="23" fill="white" stroke="#475569"/><rect x="1392" y="580" width="9" height="5" fill="white" stroke="#475569"/><rect x="1392" y="590" width="9" height="5" fill="white" stroke="#475569"/>
+<text x="1327.5" y="617.0" class="label" text-anchor="middle">Google Calendar</text>
+<polyline points="1128,605 1230,605" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<path d="M455,880 C455,853 785,853 785,880 L785,933 C785,960 455,960 455,933 Z" fill="#f6f2fa" stroke="#475569" stroke-width="1.7"/>
+<ellipse cx="620" cy="880" rx="165" ry="20" fill="#f6f2fa" stroke="#475569" stroke-width="1.7"/>
+<text x="620" y="924" class="label" text-anchor="middle">PostgreSQL</text>
+<polyline points="620,660 620,859" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+</svg>
